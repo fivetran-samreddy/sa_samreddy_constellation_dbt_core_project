@@ -7,7 +7,7 @@ sa_samreddy_constellation_dbt_core_project:
     dev:
       type: databricks
       catalog: sa_samreddy
-      schema: Constellation_demo
+      schema: constellation_dbt_demo_agriculture
       host: <your_workspace_hostname>        # e.g. dbc-xxxxxxx-xxxx.cloud.databricks.com
       http_path: <your_sql_warehouse_http_path>
       token: <your_personal_access_token>    # or use OAuth

@@ -3,7 +3,7 @@ version: 2
 sources:
   - name: constellation_demo
     database: sa_samreddy          # Unity Catalog catalog name
-    schema: Constellation_demo
+    schema: constellation_dbt_demo_agriculture
     tables:
       - name: COFFEE_PRICES_LATEST
         description: "Latest coffee price records for Constellation"
