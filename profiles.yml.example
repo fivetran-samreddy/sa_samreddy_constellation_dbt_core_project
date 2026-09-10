@@ -1,0 +1,14 @@
+# Copy this to ~/.dbt/profiles.yml (or set DBT_PROFILES_DIR) and fill in
+# your own values. Do NOT commit your real profiles.yml.
+
+sa_samreddy_constellation_dbt_core_project:
+  target: dev
+  outputs:
+    dev:
+      type: databricks
+      catalog: sa_samreddy
+      schema: Constellation_demo
+      host: <your_workspace_hostname>        # e.g. dbc-xxxxxxx-xxxx.cloud.databricks.com
+      http_path: <your_sql_warehouse_http_path>
+      token: <your_personal_access_token>    # or use OAuth
+      threads: 4

@@ -1,0 +1,8 @@
+version: 2
+
+models:
+  - name: stg_coffee_prices_rounded
+    description: "Coffee prices with HIGH rounded to a whole dollar when HIGH >= 75.00"
+    columns:
+      - name: HIGH
+        description: "Rounded to nearest whole number when >= 75.00, otherwise unchanged"

@@ -1,0 +1,19 @@
+name: 'sa_samreddy_constellation_dbt_core_project'
+version: '1.0.0'
+config-version: 2
+
+profile: 'sa_samreddy_constellation_dbt_core_project'
+
+model-paths: ["models"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+test-paths: ["tests"]
+
+clean-targets:
+  - "target"
+  - "dbt_packages"
+
+models:
+  sa_samreddy_constellation_dbt_core_project:
+    staging:
+      +materialized: view
